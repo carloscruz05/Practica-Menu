@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotoVideo Cruz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>FotoVideo Cruz</h1>
+    </header>
+
+    <!-- Botón para abrir/cerrar el menú -->
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <!-- Menú lateral con botón para cerrar -->
+    <nav id="sideMenu">
+        <button class="close-btn" onclick="toggleMenu()">✖</button>
+        <ul>
+            <li><a href="#">📷 Fotos</a></li>
+            <li><a href="#">🎥 Videos</a></li>
+            <li><a href="#">🖼️ Cuadros</a></li>
+        </ul>
+    </nav>
+
+   <main>
+    <img src="Foto.png" alt="Imagen de prueba">
+</main>
+
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("sideMenu");
+            menu.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
